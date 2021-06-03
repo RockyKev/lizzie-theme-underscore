@@ -1,9 +1,8 @@
 const mix = require('laravel-mix');
-const tailwindcss = require('mix-tailwindcss');
 
+mix.js('src/app.js', 'dist/')
+    .sass('sass/style.scss', 'style.css');
 
-mix.sass('sass/style.scss', 'style.css')
-.tailwind('./tailwind.config.js');
 
 // mix.sass('sass/style.scss', 'style.css')
 //   .options({

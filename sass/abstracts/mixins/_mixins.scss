@@ -9,3 +9,10 @@
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
 }
+
+
+@mixin max-width {
+	max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,10 +1,8 @@
-/* Navigation
---------------------------------------------- */
-@import "navigation/navigation";
-
 /* Posts and pages
 --------------------------------------------- */
+@import "content/header";
 @import "content/posts-and-pages";
+@import "content/footer";
 
 /* Comments
 --------------------------------------------- */
