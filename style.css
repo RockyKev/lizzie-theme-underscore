@@ -10873,8 +10873,27 @@ textarea {
 --------------------------------------------------------------*/
 /* Posts and pages
 --------------------------------------------- */
-.navbar-nav {
-  background: purple;
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+
+.navbar-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav ul {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .navbar-nav ul li + li {
+    padding-left: 16px;
+  }
 }
 
 /* Small menu. */

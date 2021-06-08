@@ -1,5 +1,31 @@
+#navbarSupportedContent {
+  justify-content: flex-end;
+}
+
 .navbar-nav {
-  background: purple;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    @include media-breakpoint-up(lg) { 
+      flex-direction: row;
+      align-items: flex-end;
+
+      li + li {
+        padding-left: 16px;
+      }
+
+    }
+
+
+  }
+
+
 }
 
 // .site-header {
