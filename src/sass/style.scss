@@ -56,7 +56,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // @tailwind components;
 
 // @tailwind utilities;
-// @import "plugins/bootstrap_overrides";
+@import "utilities/bootstrap_overrides";
 // @import "plugins/bootstrap_loaders";
 @import "~bootstrap/scss/bootstrap";
 

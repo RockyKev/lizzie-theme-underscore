@@ -12,4 +12,12 @@ img {
 
 figure {
 	margin: 1em 0; // Extra wide images within figure tags don't overflow the content area.
+
+	&.add-shadow {
+		img {
+			box-shadow:  0 .5rem 1rem rgba($black, .15);
+		}
+	}
+
 }
+

@@ -22,14 +22,14 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( 'body-bg' ); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'lizzie-theme-underscore'); ?></a>
 
-		<header>
+		<header class="top-navigation">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
+				<div class="container-fluid max-width">
 					<?php
 					the_custom_logo();
 					if (is_front_page() && is_home()) :
@@ -56,7 +56,7 @@
 						<?php
 						wp_nav_menu(
 							array(
-								'theme_location' => 'menu-1',
+								'theme_location' => 'menu-header',
 								'container' => false,
 								'menu_id'        => 'primary-menu',
 								'container_class' => 'ms-auto',

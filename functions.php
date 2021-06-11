@@ -52,7 +52,9 @@ if (!function_exists('lizzie_theme_underscore_setup')) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__('Primary', 'lizzie-theme-underscore'),
+				'menu-header' => esc_html__('Top Menu', 'lizzie-theme-underscore'),
+				'menu-footer' => esc_html__('Footer', 'lizzie-theme-underscore'),
+				'menu-footer-lower' => esc_html__('Below Footer', 'lizzie-theme-underscore')
 			)
 		);
 
@@ -172,6 +174,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
 
 require get_template_directory() . '/src/block-patterns.php';
 

@@ -33,7 +33,45 @@ function lizzie_theme_register_my_patterns()
         )
     );
 
+    register_block_pattern(
+        'lizzie-theme-underscore/image-text',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('Column - Image/Text', 'lizzie-theme-underscore'),
+            'description' => _x('Column - two - circle image and text', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/columns-two-image-text.html")
+        )
+    );
 
+    register_block_pattern(
+        'lizzie-theme-underscore/about-w-circle-image',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('About - Header/Body/Circle Image', 'lizzie-theme-underscore'),
+            'description' => _x('About with header and circular images', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/about-w-circle-image.html")
+        )
+    );
+
+    register_block_pattern(
+        'lizzie-theme-underscore/hero-cover',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('Hero Cover - Just Text', 'lizzie-theme-underscore'),
+            'description' => _x('Hero images', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/hero-cover.html")
+        )
+    );
+
+    register_block_pattern(
+        'lizzie-theme-underscore/full-width-colorbar',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('Full - Just Text', 'lizzie-theme-underscore'),
+            'description' => _x('Full Width', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/full-width-colorbar.html")
+        )
+    );
 
 }
 

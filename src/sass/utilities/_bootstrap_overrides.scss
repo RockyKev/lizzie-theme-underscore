@@ -1,4 +1,33 @@
 $body-color: #333;
-$body-bg: blue;
+$body-bg: white;
+$body-edges: peachpuff;
+
 $border-radius: .4rem;
-$success: #7952b3;
+
+// $primary:       $blue;
+// $secondary:     $gray-600;
+// $success:       $green;
+// $info:          $cyan;
+// $warning:       $yellow;
+// $danger:        $red;
+// $light:         $gray-100;
+// $dark:          $gray-900;
+$primary:       blue;
+$secondary:     purple;
+$success:       green;
+$info:          cyan;
+$warning:       yellow;
+$danger:        red;
+$light:         white;
+$dark:          darkgrey;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);

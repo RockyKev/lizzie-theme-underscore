@@ -1,6 +1,6 @@
 /* Typography
 --------------------------------------------- */
-@import "typography/typography";
+@import "typography";
 
 /* Elements
 --------------------------------------------- */
@@ -18,3 +18,8 @@
 --------------------------------------------- */
 @import "elements/buttons";
 @import "elements/fields";
+
+/* Blocks
+--------------------------------------------- */
+@import "custom_blocks";
+
