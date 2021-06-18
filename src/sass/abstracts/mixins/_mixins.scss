@@ -16,3 +16,16 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+@mixin top-margin ($rems: 2) {
+	margin-top: $rems + 0rem;
+}
+
+@mixin bottom-margin ($rems: 2) {
+	margin-bottom: $rems + 0rem;
+}
+
+@mixin left-right-padding {
+	padding-left: 4rem;
+	padding-right: 4rem;
+}

@@ -44,7 +44,7 @@
 
 					//$lizzie_theme_underscore_description = get_bloginfo('description', 'display');
 					//if ($lizzie_theme_underscore_description || is_customize_preview()) :
-					?> logo heRE
+					?>
 
 
 

@@ -19,3 +19,7 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.wp-block-buttons {
+	@include top-margin;
+}

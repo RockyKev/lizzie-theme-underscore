@@ -15,7 +15,7 @@
 <footer>
 	<div class="container-fluid site-footer">
 		<div class="row py-5 max-width">
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<div class="site-info text-light">
 
 					Lizzie Merrit logo
@@ -25,7 +25,7 @@
 
 			</div>
 
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<div class="menu-footer">
 
 					<?php
@@ -44,11 +44,11 @@
 	<div class="container-fluid site-footer-lower">
 		<div class="row pt-4 max-width">
 
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<p class="text-light">© <?php echo date("Y"); ?> Lizzie Merritt</p>
 			</div>
 
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 			<?php
 					wp_nav_menu(
 						array(

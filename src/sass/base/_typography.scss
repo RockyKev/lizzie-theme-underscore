@@ -17,6 +17,9 @@ h4,
 h5,
 h6 {
 	clear: both;
+	@include left-right-padding;
+	@include top-margin;
+	@include bottom-margin;
 }
 
 

@@ -67,7 +67,7 @@ function lizzie_theme_register_my_patterns()
         'lizzie-theme-underscore/full-width-colorbar',
         array(
             'categories'    => ['lizzie'],
-            'title'       => __('Full - Just Text', 'lizzie-theme-underscore'),
+            'title'       => __('Full Width Color - Just Text', 'lizzie-theme-underscore'),
             'description' => _x('Full Width', 'lizzie-theme-underscore'),
             'content'     => file_get_contents(get_template_directory() . "/block-patterns/full-width-colorbar.html")
         )
