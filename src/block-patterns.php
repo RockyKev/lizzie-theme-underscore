@@ -67,12 +67,41 @@ function lizzie_theme_register_my_patterns()
         'lizzie-theme-underscore/full-width-colorbar',
         array(
             'categories'    => ['lizzie'],
-            'title'       => __('Full Width Color - Just Text', 'lizzie-theme-underscore'),
+            'title'       => __('Full Width Color - Just Text!', 'lizzie-theme-underscore'),
             'description' => _x('Full Width', 'lizzie-theme-underscore'),
             'content'     => file_get_contents(get_template_directory() . "/block-patterns/full-width-colorbar.html")
         )
     );
 
+    register_block_pattern(
+        'lizzie-theme-underscore/full-width-colorbar-optin-mailchimp',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('Full Width Color - text and opt-in!', 'lizzie-theme-underscore'),
+            'description' => _x('Full Width', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/full-width-colorbar-optin-mailchimp.html")
+        )
+    );
+
+    register_block_pattern(
+        'lizzie-theme-underscore/optin-mailchimp-stack-only',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('Optin Box', 'lizzie-theme-underscore'),
+            'description' => _x('Optin', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/optin-mailchimp.html")
+        )
+    );
+
+    register_block_pattern(
+        'lizzie-theme-underscore/optin-mailchimp-stack',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('Optin Stack', 'lizzie-theme-underscore'),
+            'description' => _x('Optin', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/optin-mailchimp-stack.html")
+        )
+    );
 }
 
 

@@ -26,6 +26,8 @@
 }
 
 @mixin left-right-padding {
-	padding-left: 4rem;
-	padding-right: 4rem;
+	@include media-breakpoint-up(lg) {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	 }
 }
