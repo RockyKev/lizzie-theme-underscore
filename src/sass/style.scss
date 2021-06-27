@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: RK
 Author URI: http://underscores.me/
 Description: Lizzie theme
-Version: 1.0.1-21.06.17
+Version: 1.0.2-21.06.26
 Tested up to: 5.7
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -50,18 +50,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 --------------------------------------------------------------*/
 
-// // Import Tailwind
-// @tailwind base;
-
-// @tailwind components;
-
-// @tailwind utilities;
-@import "utilities/bootstrap_overrides";
-// @import "plugins/bootstrap_loaders";
-@import "~bootstrap/scss/bootstrap";
-
 // Import variables and mixins.
 @import "abstracts/abstracts";
+
+@import "abstracts/bootstrap_overrides";
+// @import "plugins/bootstrap_loaders";
+@import "~bootstrap/scss/bootstrap";
 
 /*--------------------------------------------------------------
 # Generic
@@ -97,7 +91,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /* Jetpack infinite scroll
 --------------------------------------------- */
-@import "plugins/jetpack/infinite-scroll";
+// @import "plugins/jetpack/infinite-scroll";
 
 /*--------------------------------------------------------------
 # Utilities

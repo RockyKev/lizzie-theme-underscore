@@ -21,8 +21,7 @@ if (!function_exists('lizzie_theme_underscore_setup')) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function lizzie_theme_underscore_setup()
-	{
+	function lizzie_theme_underscore_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -115,8 +114,7 @@ add_action('after_setup_theme', 'lizzie_theme_underscore_setup');
  *
  * @global int $content_width
  */
-function lizzie_theme_underscore_content_width()
-{
+function lizzie_theme_underscore_content_width() {
 	$GLOBALS['content_width'] = apply_filters('lizzie_theme_underscore_content_width', 640);
 }
 add_action('after_setup_theme', 'lizzie_theme_underscore_content_width', 0);
@@ -126,8 +124,7 @@ add_action('after_setup_theme', 'lizzie_theme_underscore_content_width', 0);
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function lizzie_theme_underscore_widgets_init()
-{
+function lizzie_theme_underscore_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__('Sidebar', 'lizzie-theme-underscore'),
@@ -145,10 +142,11 @@ add_action('widgets_init', 'lizzie_theme_underscore_widgets_init');
 /**
  * Enqueue scripts and styles.
  */
-function lizzie_theme_underscore_scripts()
-{
+function lizzie_theme_underscore_scripts() {
 	wp_enqueue_style('lizzie-theme-underscore-style', get_stylesheet_uri(), array(), _S_VERSION);
 	wp_style_add_data('lizzie-theme-underscore-style', 'rtl', 'replace');
+
+
 
 	wp_enqueue_script('lizzie-theme-underscore-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
@@ -158,7 +156,28 @@ function lizzie_theme_underscore_scripts()
 
 	wp_enqueue_script('lizzie-theme-underscore-js', get_template_directory_uri() . '/dist/app.js', array(), _S_VERSION, true);
 }
+
 add_action('wp_enqueue_scripts', 'lizzie_theme_underscore_scripts');
+
+function lizzie_theme_underscore_inject_scripts() {
+?>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<?php
+}
+
+add_action('wp_head', 'lizzie_theme_underscore_inject_scripts');
+
+function lizzie_theme_underscore_enqueue_fonts() {
+
+	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap', false );
+
+
+}
+
+add_action('wp_enqueue_scripts', 'lizzie_theme_underscore_enqueue_fonts');
 
 /**
  * Implement the Custom Header feature.

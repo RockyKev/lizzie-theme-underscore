@@ -4,6 +4,8 @@
 
 .top-navigation {
   @extend .text-uppercase;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-nav {

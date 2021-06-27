@@ -11,7 +11,7 @@ img {
 }
 
 figure {
-	margin: 0 0 1em 0; // Extra wide images within figure tags don't overflow the content area.
+	// margin: 0 0 1em 0; // Extra wide images within figure tags don't overflow the content area.
 
 	&.add-shadow {
 		img {
@@ -19,5 +19,9 @@ figure {
 		}
 	}
 
+}
+
+.wp-block-image {
+	margin-bottom: 0;
 }
 

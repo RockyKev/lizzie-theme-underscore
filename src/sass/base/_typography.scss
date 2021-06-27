@@ -5,7 +5,8 @@ select,
 optgroup,
 textarea {
 	color: $color__text-main;
-	font-family: $font__main;
+	// font-family: $font__body, $font__main;
+	font-family: $font__body;
 	font-size: 1rem;
 	line-height: $font__line-height-body;
 }
@@ -16,6 +17,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: $font__title;
 	clear: both;
 	@include left-right-padding;
 	@include top-margin;

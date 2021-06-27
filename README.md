@@ -1,5 +1,16 @@
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
+
+# Lizzie
+
+## Lizzie needs
+
+Todo list: 
+[] - Accordion
+[x] - Make navbar sticky. 
+[] - Make 'navbar' on-hover not suck.
+
+
 _s
 ===
 

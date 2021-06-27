@@ -102,6 +102,16 @@ function lizzie_theme_register_my_patterns()
             'content'     => file_get_contents(get_template_directory() . "/block-patterns/optin-mailchimp-stack.html")
         )
     );
+
+    register_block_pattern(
+        'lizzie-theme-underscore/you-can-book-me-embed',
+        array(
+            'categories'    => ['lizzie'],
+            'title'       => __('YCBM Embed', 'lizzie-theme-underscore'),
+            'description' => _x('Embeds the YCBM Optin bit', 'lizzie-theme-underscore'),
+            'content'     => file_get_contents(get_template_directory() . "/block-patterns/embed-you-can-book-me.html")
+        )
+    );
 }
 
 
