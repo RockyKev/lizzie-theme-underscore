@@ -8,7 +8,8 @@
 Todo list: 
 [] - Accordion
 [x] - Make navbar sticky. 
-[] - Make 'navbar' on-hover not suck.
+[] - Navbar is not correctly sticking
+[] - Pull icon from customizer
 
 
 _s
@@ -108,7 +109,20 @@ https://github.com/JeffreyWay/laravel-mix/issues/2633#issuecomment-802023077
   // },
   ```
 
+### Building the Project
+
+1. Update the `_S_VERSION` in `functions.php`
+2. `npm run bundle` to generate a `.zip` file
+
 ### Available CLI commands
+
+
+NEW
+
+
+
+
+OLD
 
 `_s` comes packed with CLI commands tailored for WordPress theme development :
 

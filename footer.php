@@ -17,11 +17,18 @@
 		<div class="row py-5 max-width">
 			<div class="col-12 col-lg-6">
 				<div class="site-info text-light">
+					<?php if ( get_header_image() ) : ?>
+						<div class="site-title m-auto ms-md-0">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+							</a>
+						</div>
+					<?php endif; ?>
 
-					Lizzie Merrit logo
-					<!-- <span class="sep"> | </span> -->
 
+				
 				</div>
+
 
 			</div>
 
@@ -45,7 +52,7 @@
 		<div class="row pt-4 max-width">
 
 			<div class="col-12 col-lg-6">
-				<p class="text-light">© <?php echo date("Y"); ?> Lizzie Merritt</p>
+				<p class="text-light text-center text-md-start">© <?php echo date("Y"); ?> Lizzie Merritt</p>
 			</div>
 
 			<div class="col-12 col-lg-6">

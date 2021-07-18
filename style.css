@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: RK
 Author URI: http://underscores.me/
 Description: Lizzie theme
-Version: 1.0.2-21.06.26
+Version: 1.0.3-21.07.18
 Tested up to: 5.7
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -10973,10 +10973,38 @@ textarea {
 
 .top-navigation {
   position: sticky;
+  z-index: 100;
+  box-shadow: 0 5px 15px #cccccc5c;
   top: 0;
 }
 
-.navbar-nav ul {
+@media (min-width: 768px) {
+  .top-navigation {
+    top: 32px;
+  }
+}
+
+.site-title {
+  max-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .site-title .custom-logo-link {
+    display: none;
+  }
+}
+
+.site-title .custom-logo-link-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-title .custom-logo-link-desktop {
+    display: initial;
+  }
+}
+
+.navbar-nav {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -10986,11 +11014,11 @@ textarea {
 }
 
 @media (min-width: 992px) {
-  .navbar-nav ul {
+  .navbar-nav {
     flex-direction: row;
     align-items: flex-end;
   }
-  .navbar-nav ul li + li {
+  .navbar-nav li + li {
     padding: 0px 1rem;
   }
 }
@@ -11550,11 +11578,6 @@ footer .menu-footer li + li {
   margin-bottom: 0;
   margin-top: 0;
   padding: 0;
-}
-
-/* Make sure logo link wraps around logo image. */
-.custom-logo-link {
-  display: inline-block;
 }
 
 /* Captions

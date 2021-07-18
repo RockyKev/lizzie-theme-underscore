@@ -30,23 +30,15 @@
 		<header class="top-navigation">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container-fluid max-width">
-					<?php
-					the_custom_logo();
-					if (is_front_page() && is_home()) :
-					?>
-						<div class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></div>
-					<?php
-					else :
-					?>
-						<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
-					<?php
-					endif;
+					<?php if ( get_header_image() ) : ?>
+						<div class="site-title">
+							<?php the_custom_logo(); ?> 
 
-					//$lizzie_theme_underscore_description = get_bloginfo('description', 'display');
-					//if ($lizzie_theme_underscore_description || is_customize_preview()) :
-					?>
-
-
+							<a class="custom-logo-link-desktop" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+							</a>
+						</div>
+					<?php endif; ?>
 
 
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

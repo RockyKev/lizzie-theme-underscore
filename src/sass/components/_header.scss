@@ -5,12 +5,39 @@
 .top-navigation {
   @extend .text-uppercase;
   position: sticky;
+  z-index: 100;
+  box-shadow: 0 5px 15px #cccccc5c;
   top: 0;
+
+  @include media-breakpoint-up(md) {
+    top: 32px;
+  }
 }
 
-.navbar-nav {
+.site-title {
+  max-width: 250px;
 
-  ul {
+  // LOGOS 
+  .custom-logo-link {
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  .custom-logo-link-desktop {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: initial;
+    }
+  }
+}
+
+
+
+
+.navbar-nav {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -29,11 +56,6 @@
 
 
     }
-
-
-  }
-
-
 }
 
 .comment-navigation,
