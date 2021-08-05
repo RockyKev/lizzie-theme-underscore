@@ -1,0 +1,82 @@
+#mc_embed_signup {
+
+    background-color: #404040;
+    margin: 2rem 0rem;
+
+    #mc-embedded-subscribe-form {
+        display: flex;
+        align-items: center;
+        padding: 2rem;    
+        flex-direction: column;
+
+        @include media-breakpoint-up(lg) {
+         flex-direction: row; 
+      }
+
+    }
+
+    #mc_embed_signup_scroll {
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+  
+        @include media-breakpoint-up(lg) {
+              flex-direction: row; 
+           }
+
+        .mc-field-group {
+           display: flex;
+           flex-direction: column;
+           margin: 0 1rem;
+           flex-basis: 100%;
+  
+        //    @include media-breakpoint-up(lg) {
+        //       flex-basis: 35%;
+        //    }
+  
+           label {
+              text-align: white;
+              color: white;
+              margin-bottom: 0.5rem;
+           }
+
+           input {
+               border-radius: 0.5rem;
+                padding: 0.5rem;
+           }
+        }
+  
+        // columns
+        // &.stack {
+        //    flex-direction: column;
+  
+        //    .mc-field-group {
+        //       width: 400px;
+        //       margin: 0.5rem auto;
+        //    }
+        // }
+  
+     }
+  
+    //  input[name="EMAIL"] {
+    //     font-size: 75%;
+    //     padding-top: 0.5rem;
+    //  }
+  
+  
+     input[name="subscribe"] {
+        font-size: 1rem;
+        padding: 1rem 2.5rem;
+        color: black;
+        background-color: #ffea83;
+        border: 0;
+        border-radius: 0.5rem;
+     }
+  
+     // mailchimp's shitty submit button wrapper
+     .clear {
+         align-self: flex-end;
+     }
+
+}
+

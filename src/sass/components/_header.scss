@@ -9,9 +9,9 @@
   box-shadow: 0 5px 15px #cccccc5c;
   top: 0;
 
-  @include media-breakpoint-up(md) {
-    top: 32px;
-  }
+  // @include media-breakpoint-up(md) {
+  //   top: 32px;
+  // }
 }
 
 .site-title {

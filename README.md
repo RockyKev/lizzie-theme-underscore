@@ -3,14 +3,23 @@
 
 # Lizzie
 
-## Lizzie needs
+## Fixing the theme
 
-Todo list: 
-[] - Accordion
-[x] - Make navbar sticky. 
-[] - Navbar is not correctly sticking
-[] - Pull icon from customizer
+[] sass -> base -> elements can be merged into base->_common.scss & base->forms
+[] typography can be moved to abstracts
+[] abstracts contain mixins, typography, and variables
+[] base->custom blocks can be it's own folder
+[] components can be merged into base-> wordpress
+[] layouts can be deleted
+[] utilities can be reviewed and merged into base
+[] Bootstrap can be brought in piecemeal. 
+[] Compile should be minified 
+[] root->js folder should be moved into src
+[] dist should be primary. style.css should only be for theme information. 
+[] tailwind config should be removed
 
+wants: 
+npm run prod appends version number to style.css and functions.php
 
 _s
 ===
@@ -112,7 +121,8 @@ https://github.com/JeffreyWay/laravel-mix/issues/2633#issuecomment-802023077
 ### Building the Project
 
 1. Update the `_S_VERSION` in `functions.php`
-2. `npm run bundle` to generate a `.zip` file
+2. `npm run prod` to build styles.css 
+3. `npm run bundle` to generate a `.zip` file
 
 ### Available CLI commands
 

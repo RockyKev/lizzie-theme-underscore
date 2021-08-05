@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: RK
 Author URI: http://underscores.me/
 Description: Lizzie theme
-Version: 1.0.3-21.07.18
+Version: 1.0.7-21.07.25
 Tested up to: 5.7
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -42,7 +42,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Captions
 	- Galleries
 # plugins
-	- Jetpack infinite scroll
+
 # Utilities
 	- Accessibility
 	- Alignments
@@ -6394,11 +6394,11 @@ fieldset:disabled .btn {
   color: #ff3333;
 }
 
-.link-light, footer ul li a {
+.link-light {
   color: white;
 }
 
-.link-light:hover, footer ul li a:hover, .link-light:focus, footer ul li a:focus {
+.link-light:hover, .link-light:focus {
   color: white;
 }
 
@@ -10913,52 +10913,6 @@ textarea {
   padding-bottom: 1rem;
 }
 
-#mc_embed_signup #mc_embed_signup_scroll {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-#mc_embed_signup #mc_embed_signup_scroll .mc-field-group {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-}
-
-@media (min-width: 992px) {
-  #mc_embed_signup #mc_embed_signup_scroll .mc-field-group {
-    flex-basis: 35%;
-  }
-}
-
-#mc_embed_signup #mc_embed_signup_scroll .mc-field-group label {
-  text-align: center;
-}
-
-#mc_embed_signup #mc_embed_signup_scroll.stack {
-  flex-direction: column;
-}
-
-#mc_embed_signup #mc_embed_signup_scroll.stack .mc-field-group {
-  width: 400px;
-  margin: 0.5rem auto;
-}
-
-#mc_embed_signup input[name="EMAIL"] {
-  font-size: 75%;
-  padding-top: 0.5rem;
-}
-
-#mc_embed_signup input[name="subscribe"] {
-  font-size: 1rem;
-  padding: 1rem 2.5rem;
-  color: white;
-  background-color: orangered;
-  border: 0;
-  border-radius: 0.5rem;
-}
-
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
@@ -10976,12 +10930,6 @@ textarea {
   z-index: 100;
   box-shadow: 0 5px 15px #cccccc5c;
   top: 0;
-}
-
-@media (min-width: 768px) {
-  .top-navigation {
-    top: 32px;
-  }
 }
 
 .site-title {
@@ -11529,7 +11477,9 @@ textarea {
 }
 
 .site-footer {
-  background-color: #4D4E4F;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .site-footer-lower {
@@ -11542,6 +11492,10 @@ footer ul {
   align-items: center;
   justify-content: flex-end;
   margin: 0;
+}
+
+footer ul li a {
+  font-size: 0.75rem;
 }
 
 footer .menu-footer li + li {
@@ -11656,6 +11610,67 @@ footer .menu-footer li + li {
 --------------------------------------------------------------*/
 /* Jetpack infinite scroll
 --------------------------------------------- */
+#mc_embed_signup {
+  background-color: #404040;
+  margin: 2rem 0rem;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  #mc_embed_signup #mc-embedded-subscribe-form {
+    flex-direction: row;
+  }
+}
+
+#mc_embed_signup #mc_embed_signup_scroll {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  #mc_embed_signup #mc_embed_signup_scroll {
+    flex-direction: row;
+  }
+}
+
+#mc_embed_signup #mc_embed_signup_scroll .mc-field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  flex-basis: 100%;
+}
+
+#mc_embed_signup #mc_embed_signup_scroll .mc-field-group label {
+  text-align: white;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+#mc_embed_signup #mc_embed_signup_scroll .mc-field-group input {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+#mc_embed_signup input[name="subscribe"] {
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+  color: black;
+  background-color: #ffea83;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+#mc_embed_signup .clear {
+  align-self: flex-end;
+}
+
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/

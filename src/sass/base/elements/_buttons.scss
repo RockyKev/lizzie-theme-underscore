@@ -23,3 +23,19 @@ input[type="submit"] {
 .wp-block-buttons {
 	@include top-margin;
 }
+
+// .wp-block-button {
+// 	.wp-block-button__link {
+// 		position: relative; 
+// 		&:hover:after {
+// 			content: '';
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			width: 50%;
+// 			height: 100%;
+// 			background: rgba(0, 150, 0, 0.75);
+// 		}
+// 	}
+// }
+

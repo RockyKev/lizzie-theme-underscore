@@ -3,8 +3,8 @@ $theme-grey: #4D4E4F;
 $theme-darkgrey: #282727;
 
 .site-footer {
-    // @include max-width;
-    background-color: $theme-grey;
+    @include max-width;
+    // background-color: $theme-grey;
 }
 
 .site-footer-lower {
@@ -23,7 +23,7 @@ footer {
 
         li {
             a {
-                @extend .link-light;
+                font-size: 0.75rem;
                 @extend  .text-uppercase;
             }
 
