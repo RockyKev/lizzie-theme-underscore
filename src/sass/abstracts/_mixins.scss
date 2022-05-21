@@ -12,9 +12,9 @@
 
 
 @mixin max-width {
-	max-width: 1320px;
-    margin-right: auto;
-    margin-left: auto;
+	max-width: 1440px;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 @mixin top-margin ($rems: 2) {

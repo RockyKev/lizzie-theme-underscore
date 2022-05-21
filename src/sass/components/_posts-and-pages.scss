@@ -26,3 +26,27 @@
 	margin: 0 0 1.5em;
 }
 
+// .entry-meta,
+// .entry-content, 
+// .entry-footer {
+// 	@include top-margin;
+// 	@include left-right-padding;
+// 	color: #005285;
+//     font-size: 26px;
+// }
+
+article.type-post,
+nav.navigation, 
+.comments-area {
+	@include top-margin;
+	@include left-right-padding;
+	color: #005285; // TODO: Where is this from?
+    font-size: $font__body__size;
+}
+
+nav.navigation, 
+.entry-meta, .entry-footer {
+	font-family: 'Alegreya Sans', sans-serif; // this is a weird hack because of the Google Font add-on
+	color: #005285;
+    font-size: calc($font__body__size * 0.8);
+}

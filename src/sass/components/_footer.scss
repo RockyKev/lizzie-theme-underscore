@@ -21,21 +21,25 @@ footer {
         justify-content: flex-end;
         margin: 0;
 
-        li {
-            a {
+        li.menu-item {
+             a {
+                color: $theme-grey;
                 font-size: 0.75rem;
                 @extend  .text-uppercase;
             }
 
         }
 
+        li+li {
+            border-left: 1px solid lightgray;
+            padding: 3px;
+        }
+
+
     }
 
     .menu-footer {
-        li+li {
-            border-left: 2px solid black;
-            padding: 6px;
-        }
+
 
     }
 }
