@@ -20,8 +20,8 @@ h6 {
 	font-family: $font__title;
 	clear: both;
 	@include left-right-padding;
-	@include top-margin;
-	@include bottom-margin;
+	@include top-padding;
+	@include bottom-padding;
 }
 
 

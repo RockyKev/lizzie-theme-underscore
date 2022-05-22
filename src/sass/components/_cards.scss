@@ -1,6 +1,12 @@
 .tag-articles {
+  display: flex;
+
   .card {
-    background: lightblue;
+
+    img {
+      aspect-ratio: 16/10;
+      object-fit: cover;
+    }
 
     a {
         color: black;
@@ -8,13 +14,12 @@
     }
 
     .card-title {
-      padding: 0;
+      padding: 20px 0;
     }
 
-    .card-tag {
-      text-transform: uppercase;
-      font-size: 12px;
-      color: #999999 !important;
+    .card-tags {
+      font-size: calc($font__body__size * 0.5);
+      color: $color__text-input !important;
     }
   }
 }

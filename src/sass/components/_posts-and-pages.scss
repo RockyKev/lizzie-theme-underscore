@@ -34,14 +34,21 @@
 // 	color: #005285;
 //     font-size: 26px;
 // }
-
+// TODO: this needs cleaning up
 article.type-post,
-nav.navigation, 
 .comments-area {
-	@include top-margin;
 	@include left-right-padding;
 	color: #005285; // TODO: Where is this from?
     font-size: $font__body__size;
+}
+
+nav.navigation {
+	@include left-right-padding;
+}
+
+.nav.navigation, 
+.comments-area {
+	@include top-margin;
 }
 
 nav.navigation, 

@@ -25,6 +25,15 @@
 	margin-bottom: $rems + 0rem;
 }
 
+@mixin top-padding ($rems: 2) {
+	padding-top: $rems + 0rem;
+}
+
+@mixin bottom-padding ($rems: 2) {
+	padding-bottom: $rems + 0rem;
+}
+
+
 @mixin left-right-padding {
 	@include media-breakpoint-up(lg) {
 		padding-left: 4rem;

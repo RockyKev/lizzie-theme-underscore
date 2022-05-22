@@ -8,9 +8,10 @@
  * @package Lizzie_Theme_(Underscore)
  */
 
+ // TODO: make this be grabbed dynamically
 if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define('_S_VERSION', '1.0.7');
+	define('_S_VERSION', '1.0.20');
 }
 
 if (!function_exists('lizzie_theme_underscore_setup')) :
@@ -171,6 +172,8 @@ function lizzie_theme_underscore_inject_scripts() {
 add_action('wp_head', 'lizzie_theme_underscore_inject_scripts');
 
 function lizzie_theme_underscore_enqueue_fonts() {
+
+	// TODO: make this internal
 
 	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap', false );
 

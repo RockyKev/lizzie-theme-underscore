@@ -15,6 +15,8 @@
 get_header();
 ?>
 
+<!-- TODO: It seems to be missing the body? --> 
+
 	<main id="primary" class="site-main">
 
 		<?php
